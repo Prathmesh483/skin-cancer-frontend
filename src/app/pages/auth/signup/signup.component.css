@@ -1,0 +1,98 @@
+
+h2{
+  margin-bottom: 10px;
+}
+
+form{
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* background-color: #f9f9f9; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+} */
+
+label{
+  /* background-color: #0056b3; */
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  /* margin: 5px 0; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+
+.signup-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  min-height: 5px;
+  color: red;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.center{
+  text-align: center;
+}
+
+.switch-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
+
+

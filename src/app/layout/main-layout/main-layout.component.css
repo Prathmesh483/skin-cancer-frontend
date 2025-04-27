@@ -1,0 +1,80 @@
+/* app-sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100vh; /* full height */
+  /* background-color: #ffff; or any bg */
+  /* z-index: 1000; optional: keeps sidebar on top */
+/* } */ 
+
+/* .hamburger{
+  position: fixed;
+  z-index: 1111;
+  top: 1em;
+  left: 1em;
+  padding: 10px;
+} */
+
+/* .content {
+  margin-left: 250px; /* Same as sidebar width */
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+  /* padding: 5rem; */
+  /* background-color: #fffdfa; */
+  /* background-color: white; */
+/* }  */
+
+.main-container{
+  height: 100vh;
+}
+
+.main {
+  /* width: 100%; */
+  /* background-color: aqua; */
+  display: flex;
+  transition: margin-left 0.3s ease;
+}
+
+/* When sidebar open, push content */
+.main.shifted {
+  margin-left: 250px; /* same as sidebar width */
+}
+
+.content {
+  width: 100vw;
+  /* flex-grow: 1; */
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Hamburger Button */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  /* left: 15px; */
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  background-color: #f7e8d2;
+  padding: 0em 0.5em 0em 0.5em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .main{
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
+
+/* Hide hamburger on big screens */
+@media (min-width: 768px) {
+  
+  
+}
+

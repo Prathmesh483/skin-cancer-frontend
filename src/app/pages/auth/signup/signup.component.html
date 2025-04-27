@@ -1,0 +1,111 @@
+<div>
+  <form (ngSubmit)="onSignup()" #signupForm="ngForm" class="signup-form">
+    <h2>Create an Account</h2>
+
+    <label for="name">Name:</label>
+    <input
+      [(ngModel)]="name"
+      name="name"
+      #nameRef="ngModel"
+      type="text"
+      placeholder="Full Name"
+      required
+    />
+    <span
+      *ngIf="nameRef.invalid && (nameRef.touched || nameRef.dirty)"
+      class="error"
+    >
+      Full Name is required. </span
+    ><br />
+
+    <label for="email">Email:</label>
+    <input
+      [(ngModel)]="email"
+      name="email"
+      #emailRef="ngModel"
+      type="email"
+      placeholder="Email"
+      required
+    />
+    <span
+      *ngIf="emailRef.invalid && (emailRef.touched || emailRef.dirty)"
+      class="error"
+    >
+      <span *ngIf="emailRef.errors?.['required']">Email is required.</span>
+      <span *ngIf="emailRef.errors?.['email']"
+        >Enter a valid email.</span
+      > </span
+    ><br />
+
+    <label for="password">Password:</label>
+    <input
+      [(ngModel)]="password"
+      name="password"
+      #passRef="ngModel"
+      type="password"
+      placeholder="Password"
+      minlength="6"
+      required
+    />
+    <span
+      *ngIf="passRef.invalid && (passRef.touched || passRef.dirty)"
+      class="error"
+    >
+      <span *ngIf="passRef.errors?.['required']">Password is required.</span>
+      <span *ngIf="passRef.errors?.['minlength']"
+        >Min 6 characters required.</span
+      > </span
+    ><br />
+
+    <label for="phone">Phone:</label>
+    <input
+      [(ngModel)]="phone"
+      name="phone"
+      #phoneRef="ngModel"
+      type="tel"
+      placeholder="Phone Number"
+      pattern="[0-9]{10}"
+      required
+    />
+    <span
+      *ngIf="phoneRef.invalid && (phoneRef.touched || phoneRef.dirty)"
+      class="error"
+    >
+      <span *ngIf="phoneRef.errors?.['required']"
+        >Phone number is required.</span
+      >
+      <span *ngIf="phoneRef.errors?.['pattern']"
+        >Phone number must be 10 digits.</span
+      > </span
+    ><br />
+
+    <label for="age">Age:</label>
+    <input
+      [(ngModel)]="age"
+      name="age"
+      #ageRef="ngModel"
+      type="number"
+      placeholder="Age"
+      min="1"
+      required
+    />
+    <span
+      *ngIf="ageRef.invalid && (ageRef.touched || ageRef.dirty)"
+      class="error"
+    >
+      <span *ngIf="ageRef.errors?.['required']">Age is required.</span>
+      <span *ngIf="ageRef.errors?.['min']"
+        >Age must be greater than 0.</span
+      > </span
+    ><br />
+
+    <button type="submit" [disabled]="!signupForm.valid">Sign Up</button>
+
+    <p *ngIf="error" class="error center">{{ error }}</p>
+    <p class="switch-link">
+      Already have an account?
+      <a routerLink="/login">Login here</a>
+    </p>
+
+  </form>
+</div>

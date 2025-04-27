@@ -1,0 +1,14 @@
+<div class="sidebar" [class.open]="isSidebarOpen">
+  <nav>
+    <img id="logo" src="/assets/logo.png" alt="Logo" />
+    <span>
+      <p>Hi, {{ userName }}</p>
+    <button (click)="logout()">Logout</button>
+    </span>
+    <ul>
+      <li><a routerLink="/about" routerLinkActive="active-link">About</a></li>
+      <li><a routerLink="/demo" routerLinkActive="active-link">Demo</a></li>
+      <li><a routerLink="/article" routerLinkActive="active-link">Articles</a></li>
+    </ul>
+  </nav>
+</div>

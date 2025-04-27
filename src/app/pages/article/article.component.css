@@ -1,0 +1,45 @@
+.article{
+    padding-top: 1.5em;
+}
+h1{
+    font-weight: bolder;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.box{
+    padding: 1em;
+    border: 1px solid #30273033;
+    border-radius: 0.5rem;
+    display: flex;
+    margin: 1em 0em;
+    gap: 1em;
+}
+.box img{
+    border-radius: 10px;
+    width: 25%;
+    height: 80%;
+    object-fit: cover;
+}
+.info{
+    width: 75%;
+}
+.info ul{
+    margin-left: 1em;
+    line-height: 1.5em;
+}
+
+@media (max-width: 480px){
+    .box{
+        flex-direction: column;
+    }
+    .box img{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+    }
+}
