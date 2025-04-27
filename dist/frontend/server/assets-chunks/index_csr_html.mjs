@@ -13,6 +13,6 @@ export default `<!DOCTYPE html>
   <style>*{margin:0;padding:0;box-sizing:border-box;font-family:Merriweather,serif}</style><link rel="stylesheet" href="styles-IBSUCTEA.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-IBSUCTEA.css"></noscript></head>
   <body ngcm="">
     <app-root></app-root>
-  <script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-KVTIVIOQ.js" type="module"></script></body>
+  <script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-FMNEYMUR.js" type="module"></script></body>
 </html>
 `;
