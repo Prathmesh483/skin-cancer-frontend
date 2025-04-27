@@ -1,8 +1,6 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
-# Ignore environment files
-/src/environments/environment.ts
-/src/environments/environment.prod.ts
+
 
 # Firebase local settings (optional if you use Firebase emulator)
 /.firebase/
