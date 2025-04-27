@@ -11,7 +11,7 @@
 
 
 # Compiled output
-/dist
+# /dist
 /tmp
 /out-tsc
 /bazel-out

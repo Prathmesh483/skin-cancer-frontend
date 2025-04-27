@@ -5,10 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "postbuild": "cp _redirects dist/frontend/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Frontend": "node dist/frontend/server/server.mjs"
+    "serve:ssr:Frontend": "node dist/frontend/server/server.mjs",
+    "postbuild": "cp _redirects dist/frontend/"
   },
   "private": true,
   "dependencies": {
